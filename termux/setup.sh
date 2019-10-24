@@ -30,18 +30,18 @@ popd
 touch ~/.bashrc
 touch ~/.bash_aliases
 
-cp ~/projects/machine_configuration/bash/.bashrc ~
-cp ~/projects/machine_configuration/bash/.bash_aliases ~
+cp ~/projects/machine_configuration/bash/bashrc ~/.bashrc
+cp ~/projects/machine_configuration/bash/.bash_aliases ~/.bash_aliases
 
 # Configure vim
 touch ~/.vimrc
 
-cp ~/projects/mashine_configuration/vim/.vimrc ~
+cp ~/projects/mashine_configuration/vim/vimrc ~/.vimrc
 
 # Configure tmux
 touch ~/.tmux.conf
 
-cp ~/projects/machine_configuration/tmux/.tmux.conf ~
+cp ~/projects/machine_configuration/tmux/tmux.conf ~/.tmux.conf
 
 # Configure python
 pip install --upgrade pip

@@ -30,6 +30,8 @@ sudo docker pull redmine
 cd ~
 mkdir projects
 
+ls -s /mnt/chromeos/removable/ data
+
 # Configure git
 git config --global user.name 'Payden Seibert'
 git config --global user.email 'PQSeibert@gmail.com'
@@ -42,18 +44,18 @@ popd
 touch ~/.bashrc
 touch ~/.bash_aliases
 
-cp ~/projects/machine_configuration/bash/.bashrc ~
-cp ~/projects/machine_configuration/bash/.bash_aliases ~
+cp ~/projects/machine_configuration/bash/bashrc ~/.bashrc
+cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
 
 # Configure vim
 touch ~/.vimrc
 
-cp ~/projects/machine_configuration/vim/.vimrc ~
+cp ~/projects/machine_configuration/vim/vimrc ~/.vimrc
 
 # Configure tmux
 touch ~/.tmux.conf
 
-cp ~/projects/machine_configuration/tmux/.tmux.conf ~
+cp ~/projects/machine_configuration/tmux/tmux.conf ~/.tmux.conf
 
 # Configure vscode
 
