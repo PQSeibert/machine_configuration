@@ -18,17 +18,30 @@ mkdir data
 ln -s ~/storage/external-1 ~/data/CARD
 ln -s ~/storage/external-2 ~/data/USB
 
+# Configure git
+git config --global user.name 'Payden Seibert'
+git config --global user.email 'PQSeibert@gmail.com'
+
+pushd ~/projects
+git clone https://github.com/PQSeibert/machine_configuration
+popd
+
 # Configure sh
 touch ~/.bashrc
 touch ~/.bash_aliases
 
+cp ~/projects/machine_configuration/bash/.bashrc ~
+cp ~/projects/machine_configuration/bash/.bash_aliases ~
+
 # Configure vim
-touch ~/.vim
+touch ~/.vimrc
+
+cp ~/projects/mashine_configuration/vim/.vimrc ~
 
 # Configure tmux
 touch ~/.tmux.conf
 
-# Configure vscode
+cp ~/projects/machine_configuration/tmux/.tmux.conf ~
 
 # Configure python
 pip install --upgrade pip
