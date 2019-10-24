@@ -1,0 +1,6 @@
+alias vscode='sudo docker run -it -p 127.0.0.1:8080:8080 -v "${HOME}/data/CARD/code-server:/home/coder/.local/share/code-server" -v "${HOME}/data/CARD:/home/coder" codercom/code-server:v2'
+
+alias ide_python='sudo docker run -it -v "${HOME}/data/CARD/projects:/root/projects" python /bin/bash'
+alias ide_golang='sudo docker run -it -v "${HOME}/data/CARD/projects:/root/projects" golang /bin/bash'
+
+alias python='python3'
