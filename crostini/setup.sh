@@ -23,6 +23,7 @@ sudo docker run hello-world
 # Get docker images
 sudo docker pull python
 sudo docker pull golang
+sudo docker pull kalilinux/kali
 sudo docker pull postgres
 sudo docker pull redmine
 
