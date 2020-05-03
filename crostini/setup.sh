@@ -7,6 +7,7 @@ sudo apt-get install \
   apt-transport-https \
   ca-certificates \
   curl \
+  tree \
   gnupg2 \
   software-properties-common
 
@@ -25,7 +26,6 @@ sudo docker pull python
 sudo docker pull golang
 sudo docker pull kalilinux/kali
 sudo docker pull postgres
-sudo docker pull redmine
 
 # Configure home
 cd ~
@@ -50,8 +50,10 @@ cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
 
 # Configure vim
 touch ~/.vimrc
+mkdir ~/.vim/colors
 
 cp ~/projects/machine_configuration/vim/vimrc ~/.vimrc
+cp ~/projects/machine_configuration/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
 
 # Configure tmux
 touch ~/.tmux.conf
