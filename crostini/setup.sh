@@ -60,6 +60,6 @@ cp ~/projects/machine_configuration/tmux/tmux.conf ~/.tmux.conf
 
 # Configure vscode
 
-# Configure python
-pip install --upgrade pip
-
+# Configure dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
