@@ -35,8 +35,10 @@ cp ~/projects/machine_configuration/bash/.bash_aliases ~/.bash_aliases
 
 # Configure vim
 touch ~/.vimrc
+mkdir ~/.vim/colors
 
-cp ~/projects/mashine_configuration/vim/vimrc ~/.vimrc
+cp ~/projects/machine_configuration/vim/vimrc ~/.vimrc
+cp ~/projects/machine_configuration/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
 
 # Configure tmux
 touch ~/.tmux.conf
@@ -45,4 +47,3 @@ cp ~/projects/machine_configuration/tmux/tmux.conf ~/.tmux.conf
 
 # Configure python
 pip install --upgrade pip
-
