@@ -8,23 +8,11 @@ sudo apt-get -y install \
   tree \
   tmux
 
-# Install docker
+# Install docker (wsl bionc)
 sudo apt-get -y remove docker docker-engine docker.io runc
-sudo apt-get -y install \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  gnupg2 \
-  software-properties-common
-
-# Configure docker
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian \
-  $(lsb_release -cs) \
-  stable"
-sudo apt-get -y update
-sudo apt-get -y install docker-ce-cli
+sudo apt-get -y install docker.io
+# TODO: setup remote docker deamon into config
+sudo docker run hello-world
 
 # Configure home
 cd ~
