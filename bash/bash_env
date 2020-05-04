@@ -1,2 +1,2 @@
 # --- Setup Docker Env
-DOCKER_HOST=tcp://0.0.0.0:2375
+export DOCKER_HOST=ssh://$(USER)@0.0.0.0
