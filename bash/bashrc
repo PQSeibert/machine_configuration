@@ -93,6 +93,10 @@ alias lla='ls -la'
 alias la='ls -A'
 alias l='ls -CF'
 
+# some faster grep commands
+function qwk { grep -niRI "$1" . --color; }
+alias niri=qwk
+
 # Import SSH-Keys
 # eval $(ssh-agent -s) &>dev/null
 # ssh-add ~/win_$USER/Pems/*.pem &>dev/null
