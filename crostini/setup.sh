@@ -43,17 +43,33 @@ popd
 
 # Configure sh
 touch ~/.bashrc
+touch ~/.bash_env
 touch ~/.bash_aliases
 
 cp ~/projects/machine_configuration/bash/bashrc ~/.bashrc
+cp ~/projects/machine_configuration/bash/bash_env ~/.bash_env
 cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
 
 # Configure vim
 touch ~/.vimrc
 mkdir ~/.vim/colors
+mkdir ~/.vim/packs
+mkdir ~/.vim/packs/plugins
+mkdir ~/.vim/packs/plugins/start
 
-cp ~/projects/machine_configuration/vim/vimrc ~/.vimrc
+cp ~/projects/machine_configuration/vim/vimrc ~/.vim/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
+
 cp ~/projects/machine_configuration/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
+
+pushd ~/.vim/packs/plugins/start
+git clone https://github.com/terryma/vim-multiple-cursors.git
+git clone https://github.com/editorconfig/editorconfig-vim.git
+git clone https://github.com/dense-analysis/ale.git
+git clone https://github.com/preservim/nerdtree.git
+git clone https://github.com/junegunn/fzf.vim.git
+git clone https://github.com/itchyny/lightline.vim.git
+popd
 
 # Configure tmux
 touch ~/.tmux.conf
