@@ -36,8 +36,6 @@ cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
 cp ~/projects/machine_configuration/bash/bash_env ~/.bash_env
 
 # Configure vim
-touch ~/.vimrc
-mkdir ~/.vim/colors
 mkdir ~/.vim/pack
 mkdir ~/.vim/pack/plugins
 mkdir ~/,vim/pack/plugins/start
