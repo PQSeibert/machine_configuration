@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 # Configure packages
 sudo apt-get update
 sudo apt-get upgrade
@@ -51,7 +51,7 @@ cp ~/projects/machine_configuration/bash/bash_env ~/.bash_env
 cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
 
 # Configure vim
-touch ~/.vimrc
+mkdir ~/.vim
 mkdir ~/.vim/colors
 mkdir ~/.vim/packs
 mkdir ~/.vim/packs/plugins
