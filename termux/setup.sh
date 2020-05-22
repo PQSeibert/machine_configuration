@@ -29,15 +29,22 @@ popd
 # Configure sh
 touch ~/.bashrc
 touch ~/.bash_aliases
+touch ~/.bash_env
 
 cp ~/projects/machine_configuration/bash/bashrc ~/.bashrc
-cp ~/projects/machine_configuration/bash/.bash_aliases ~/.bash_aliases
+cp ~/projects/machine_configuration/bash/bash_aliases ~/.bash_aliases
+cp ~/projects/machine_configuration/bash/bash_env ~/.bash_env
 
 # Configure vim
 touch ~/.vimrc
 mkdir ~/.vim/colors
+mkdir ~/.vim/pack
+mkdir ~/.vim/pack/plugins
+mkdir ~/,vim/pack/plugins/start
 
 cp ~/projects/machine_configuration/vim/vimrc ~/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
+
 cp ~/projects/machine_configuration/vim/colors/badwolf.vim ~/.vim/colors/badwolf.vim
 
 # Configure tmux
